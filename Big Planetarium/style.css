@@ -1,0 +1,234 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#050a1f;
+color:white;
+text-align:center;
+}
+
+header{
+background:#000814;
+padding:20px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+.hero{
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background-image:url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa");
+background-size:cover;
+background-position:center;
+}
+
+.hero h2{
+font-size:50px;
+}
+
+.btn{
+background:#ff9800;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:6px;
+margin-top:20px;
+}
+
+.video-section{
+padding:50px;
+}
+
+.planet-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:40px;
+}
+
+/* Remove underline from planet cards */
+
+.planet-card{
+text-decoration: none;
+color: white;
+}
+
+/* Planet titles */
+
+.planet-card h2{
+color: white;
+text-decoration: none;
+}
+
+/* Planet description */
+
+.planet-card p{
+color: white;
+text-decoration: none;
+}
+
+/* Prevent purple visited links */
+
+.planet-card:visited{
+color:white;
+}
+
+/* Optional hover effect */
+
+.planet-card:hover h2{
+color:#ff9800;
+}
+
+.planet-card img{
+width:100%;
+border-radius:10px;
+}
+
+.facts{
+padding:40px;
+}
+
+button{
+padding:10px 20px;
+font-size:16px;
+background:#ff9800;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+footer{
+background:#000814;
+padding:20px;
+margin-top:30px;
+}
+/* Planet Image Gallery */
+
+.planet-gallery{
+display:flex;
+gap:35px;
+justify-content:center;
+flex-wrap:wrap;
+margin:40px 0;
+}
+
+.planet-gallery img{
+width:160px;
+height:160px;
+object-fit:cover;
+border-radius:50%;
+border:3px solid #ff9800;
+transition:transform 0.4s;
+}
+
+/* Floating Animation */
+
+.float{
+animation:floatPlanet 4s ease-in-out infinite;
+}
+
+@keyframes floatPlanet{
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
+}
+
+/* Rotation Animation */
+
+.rotate{
+animation:rotatePlanet 12s linear infinite;
+}
+
+@keyframes rotatePlanet{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
+/* Hover Zoom */
+
+.zoom:hover{
+transform:scale(1.15);
+}
+
+/* Planet Detail Layout */
+
+.planet-detail{
+max-width:850px;
+margin:auto;
+padding:40px;
+text-align:center;
+}
+
+/* Section Titles */
+
+.planet-detail h2{
+color:#ff9800;
+margin-top:35px;
+margin-bottom:10px;
+font-size:24px;
+}
+
+/* Overview Text Style */
+
+.planet-detail p{
+max-width:650px;
+margin:auto;
+margin-top:10px;
+line-height:1.7;
+font-size:17px;
+color:#e0e0e0;
+}
+
+/* Remove Bullets From Facts */
+
+.planet-detail ul{
+list-style:none;
+padding:0;
+margin-top:20px;
+}
+
+/* Fact Cards Layout */
+
+.planet-detail ul li{
+background:#081735;
+margin:10px auto;
+padding:12px 18px;
+border-radius:8px;
+max-width:320px;
+font-size:16px;
+border-left:4px solid #ff9800;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Fact Hover Effect */
+
+.planet-detail ul li:hover{
+transform:scale(1.05);
+transition:0.3s;
+background:#0c204a;
+}
+
+/* Fact Button */
+
+button{
+margin-top:20px;
+padding:10px 20px;
+background:#ff9800;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#ffb74d;
+}
